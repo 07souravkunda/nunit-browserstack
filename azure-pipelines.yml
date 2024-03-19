@@ -17,4 +17,5 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'test'
-    workingDirectory: 'NUnit-BrowserStack'
+    arguments: 'SingleTest.dll'
+    workingDirectory: 'NUnit-BrowserStack/bin/Debug/net7.0'
