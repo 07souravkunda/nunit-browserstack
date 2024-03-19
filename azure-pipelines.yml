@@ -1,0 +1,20 @@
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+
+trigger:
+- master
+pool:
+  name: Default
+
+steps:
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    workingDirectory: 'NUnit-BrowserStack'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    workingDirectory: 'NUnit-BrowserStack'
