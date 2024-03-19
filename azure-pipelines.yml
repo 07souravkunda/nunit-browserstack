@@ -18,4 +18,4 @@ steps:
   inputs:
     command: 'test'
     arguments: 'SingleTest.dll'
-    workingDirectory: 'NUnit-BrowserStack/bin/Debug/net7.0'
+    workingDirectory: 'NUnit-BrowserStack/bin/Debug/net6.0'
